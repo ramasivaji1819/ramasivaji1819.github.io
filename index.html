@@ -1021,17 +1021,21 @@
         <div class="project-image"></div>
         <div class="project-content">
             <h3 class="project-title">Online Voting System</h3>
-            <p class="project-description">
-                Built a secure voting backend supporting voter authentication, election management, candidate registration, and vote casting. Implemented role-based access control, duplicate-vote prevention, RESTful APIs, and automated result calculation.
-            </p>
+            <ul class="project-description">
+                <li>Developed a RESTful backend with 9 endpoints for secure online elections, using a layered Controller–Service–Repository architecture with Spring Boot 3 and MySQL.</li>
+                <li>Developed stateless JWT authentication with BCrypt password hashing and two-tier role-based access control (Admin, Voter) using Spring Security.</li>
+                <li>Developed one-vote-per-election enforcement at both the service layer and a unique database constraint, preventing duplicate votes from double-clicks and race conditions.</li>
+                <li>Developed an election lifecycle that derives UPCOMING, ACTIVE and CLOSED status from start and end times, with result-visibility rules (admins anytime, voters only after closing).</li>
+                <li>Developed validation and centralized exception handling covering 13 business-rule scenarios, returning consistent JSON error responses with accurate HTTP status codes.</li>
+            </ul>
             <div class="project-tech">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">Spring Boot</span>
                 <span class="tech-tag">Spring Security</span>
                 <span class="tech-tag">Spring Data JPA</span>
-                <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">JWT</span>
                 <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Apache Tomcat</span>
+                <span class="tech-tag">Maven</span>
             </div>
             <div class="project-links">
                 <a href="https://github.com/ramasivaji1819/Online-Voting-System-Backend" class="project-link">GitHub →</a>
@@ -1043,20 +1047,25 @@
         <div class="project-image"></div>
         <div class="project-content">
             <h3 class="project-title">Employee Management And Leave Management System</h3>
-            <p class="project-description">
-                Developed a secure RESTful backend for employee and leave management, including employee records, leave application and approval workflows, and attendance tracking. Implemented role-based access and persistent data storage.
-            </p>
+            <ul class="project-description">
+                <li>Developed a RESTful backend with 37 endpoints across authentication, employee, department, leave and holiday modules, using a layered Controller–Service–Repository architecture.</li>
+                <li>Developed stateless JWT authentication with access and refresh tokens, BCrypt password hashing and four-tier role-based access control (Admin, HR, Manager, Employee) enforced through method-level security.</li>
+                <li>Developed an automated leave workflow for 6 leave types, covering working-day calculation, balance validation, automatic deduction and controlled status transitions (Pending, Approved, Rejected, Cancelled).</li>
+                <li>Developed a relational data model of 6 core entities with paginated search, manager–subordinate hierarchy, soft deletion, and department and holiday management.</li>
+                <li>Developed request validation with Bean Validation and centralized exception handling to return consistent, descriptive HTTP error responses.</li>
+            </ul>
             <div class="project-tech">
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">Spring Boot</span>
                 <span class="tech-tag">Spring Data JPA</span>
                 <span class="tech-tag">Hibernate</span>
+                <span class="tech-tag">Spring Security</span>
                 <span class="tech-tag">JWT</span>
                 <span class="tech-tag">MySQL</span>
                 <span class="tech-tag">Maven</span>
             </div>
             <div class="project-links">
-                <a href="" class="project-link">GitHub →</a>
+                <a href="" class="https://github.com/ramasivaji1819/Banking-Management-System-and-Leave-Management-System">GitHub →</a>
             </div>
         </div>
     </div>
